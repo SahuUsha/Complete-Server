@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# ---- Virtual Environment ----
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+impfile.txt
+
+# ---- FastAPI / Uvicorn ----
+# Log files
+*.log
+*.pid
+
+# Uploaded files (optional, if you don’t want them in git)
+uploads/
+
+# ---- Testing ----
+.coverage
+.pytest_cache/
+htmlcov/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS-specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker / Dev Containers ----
+.dockerignore
+docker-compose.override.yml
