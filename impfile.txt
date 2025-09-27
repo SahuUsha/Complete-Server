@@ -1,0 +1,32 @@
+
+create dev container 
+
+go to search in vscode > reload --> go reload and reopen 
+
+the check in terminal 
+comman:
+uname
+whoami
+
+
+then install venv 
+python -m venv venv
+
+install fastapi
+install uvicorn
+
+uvicorn is used is used to reun fast api server
+
+create fastapi app in server.py 
+then use uvicorn
+
+run pyhton file
+
+python -m app.main
+
+in development we have to start server again again 
+
+to we will create run.sh file like nodemon in nodejs
+
+then run in terminal : sh run.sh
+
