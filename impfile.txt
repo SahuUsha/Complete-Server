@@ -28,5 +28,20 @@ in development we have to start server again again
 
 to we will create run.sh file like nodemon in nodejs
 
+ctrl + shift + p
+rebuild and reopen
+
+activate venv : 
+source venv/bin/activate
+
+
 then run in terminal : sh run.sh
+
+for connecting mongodb -- we are in app but our docer in other server in docker file so with go mongo
+
+
+to kill process-
+
+lsof -i:8000
+kill -9 4091
 

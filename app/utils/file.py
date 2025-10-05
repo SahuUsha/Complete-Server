@@ -1,15 +1,10 @@
 import os
 import aiofiles
 
-BASE_DIR = os.path.join(os.getcwd(), "uploads")
+BASE_DIR = "/mnt/uploads"   # ✅ use /mnt in production
 
-
-
-async def save_to_disk(file : bytes, path: str) -> bool:
+async def save_to_disk(file: bytes, path: str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    
-    async with aiofiles.open(path, "wb") as out_file:
-        await out_file.write(file)
-        
-        
-    return True
+
+    async with aiofiles.open(path, "wb") as f:
+        await f.write(file)
